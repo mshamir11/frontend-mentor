@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 :root {
     --red : hsl(0, 78%, 62%);
@@ -16,8 +17,7 @@
 body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--very-light-gray);
-    margin: 0;
-    padding: 0;
+   
 }
 
 .card-components {
@@ -43,23 +43,95 @@ body {
 
 .text-content {
     text-align: center;
-    max-width:430px;
+    max-width:490px;
+    margin-top:30px;
 }
 
 .main-heading {
     font-weight:200;
     color: var(--dark-blue);
-    
+    font-size: 35px;
     
 }
 
 .sub-heading {
     font-weight: 600;
     color: var(--dark-blue);
-   
+    font-size: 35px;
 }
 
 .text-content p {
     color: var(--grayish-blue);
+   
+}
+
+
+* {
+    box-sizing: border-box;
+}
+.card {
+    border-radius: 5px;
+    margin: 10px;
+    width: 300px;
+    position: relative;
+    height: 220px;
+    padding: 30px;
+    background-clip: padding-box; 
+    box-shadow: 0 0 10px var(--grayish-blue);
+}
+
+
+.first-col {
+    display: flex;
+    align-items: center;
+}
+
+.second-col {
+    display: flex;
+    align-items: center;
+}
+
+.third-col {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.card h1 {
+    font-size: 15px;
+    color: var(--dark-blue);
+}
+.card p {
+    font-size: 12px;
+    color: var(--grayish-blue);  
+}
+
+.card > div {
+    
+    margin:0;
+    border:0;
+    outline:0;
+    height: 160px;
+    position: relative;
+}
+
+
+h1 {
+    margin:0;
+}
+
+.card div :last-child {
+    
+}
+
+img {
+    margin:0;
+}
+
+.card > div > div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
    
 }
